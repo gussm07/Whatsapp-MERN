@@ -1,0 +1,139 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.30;
+    /* ASIGNA EL 35% DE LA PANTALLA DE LADO DERECHO EN FORMA DE COLUMNA */
+
+}
+
+/* MARGEN DE LA BARRA LATERAL IZQUIERDA DETERMINADA CON UNA LINEA */
+.sidebar__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    border-right: 1.5px solid #3F4448;
+    background-color: #323739;
+   
+}
+
+.sidebar__headerRight{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 5vw;
+    
+   
+}
+.box__buttons{
+    margin-left: 3.5vw;
+    justify-content: right;
+    align-items: flex-end;
+    
+    
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+    margin-right: 1vw ;
+    font-size: 34px !important;
+    align-items: right;
+    justify-content: end;
+}
+
+.sidebar__search{
+    display: flex;
+    align-items: center;
+    background-color: #131C21;
+    height: 39px;
+    padding: 10px;
+  
+}
+
+.sidebar__searchContainer{
+    display: flex;
+    align-items: center;
+    /* EL BACKGROUND COLOR DEFINE TODO EL COLOR DEL CONTENEDOR */
+    /* QUE INCLUYE AL ICONO Y AL INPUT TEXT */
+    background-color: #323739;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    
+
+}
+
+/* CAMBIAMOS EL COLOR DEL ICONO DE BUSQUEDA A GRIS */
+.sidebar__searchContainer > .MuiSvgIcon-root {
+    color: #B1B3B5;
+    padding: 10px;
+}
+/* CAMBIAMOS LA POSICION Y EL COLOR A NUESTRA MANERA */
+/* DE LOS BOTONES DONA, MENSAJE Y OPCIONES */
+.donut > .MuiSvgIcon-root {
+    color: #B1B3B5;
+    /* margin-right: -5vw; */
+    margin-block-end: inherit;
+    align-items: center;
+   
+}
+.message > .MuiSvgIcon-root {
+    color: #B1B3B5;
+    /* margin-left: 1vw; */
+    margin-block-end: inherit;
+}
+.option > .MuiSvgIcon-root {
+    color: #B1B3B5;
+   /* SIRVE PARA  BLOQUEAR LOS MARGENES ENTRE UN ICONO Y OTRO*/
+   /* AL MOMENTO DE HACERLO RESPONSIVE, NO SE MUEVEN Y SE MANTIENEN ESTETICOS */
+   margin-block-end: inherit;
+}
+
+.sidebar__searchContainer > input {
+    border: none;
+    /* Sirve para no marcar un delineado al momento de  */
+    /* querer usar la barra de busqueda */
+    outline-width: 0;
+    margin-left: 10px;
+    /* CAMBIAMOS EL COLOR DE BLANCO A GRIS DEL TEXT INPUT */
+    background-color: #323739;
+    /* BORDE REDONDEADO */
+    border-radius: 30;
+    /* DEFINE COLOR DE LETRA */
+    color: whitesmoke;
+    text-align: center;
+
+    
+}
+
+/* LE DA EL ESTILO DESLIZABLE A LOS CHATS */
+.sidebar__chats{
+    /* tamaño del scrollbar */
+    flex: 1; 
+    background-color: #131c211a;
+    overflow: scroll;
+    text-decoration: none;
+    overflow-x: hidden;
+    
+     
+}
+
+
+
+
+/* ESTILO PARA EL SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgb(248, 243, 243); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f9fbfb; 
+    border-radius: 10px;
+  }
+  
+  /* TERMINA ESTILO PARA EL SCROLLBAR */
